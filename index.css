@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  background: #282828;
+  color: white;
+}
+
+h1 {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  font-size: 45px;
+}
+
+h2 {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  background: blueviolet;
+  font-size: 25px;
+  padding: 20px 30px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.data{
+  position: relative;
+  z-index: 3;
+}
+.img {
+  position: relative;
+  z-index: 2;
+  height: 250px;
+  width: 250px;
+  bottom: 500px;
+  right: 315px;
+}
+
+a:hover {
+  background: #1b1bf7;
+  -webkit-text-emphasis: replace;
+          text-emphasis: replace;
+  padding: 20px 20px;
+  content: "Click";
+  border-radius: 10px;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+h1:hover, h2:hover {
+  color: #1b1bf7;
+}
+/*# sourceMappingURL=index.css.map */

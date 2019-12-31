@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Books</title>
+    <link rel="icon" href="https://png.icons8.com/color/48/000000/book.png" type="image/png" sizes="16x16 32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Pacifico|Yanone+Kaffeesatz|IBM+Plex+Serif"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/tinder.js"></script>
+    <script src="../assets/js/bootstrap.js"></script> <!--    Custom Stylesheets-->
+    <script src="search.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/custom_style.css">
+    <link rel="stylesheet" href="assets/css/books.css">
+</head>
+
+<body style="padding: 25px">
+    <input class="form-control mr-sm-2" id="searchtext" style="width: 500px; height:auto; " type="text"
+        placeholder="Search">
+    <button class="btn btn-outline-success" onclick="searchfunction()" type="submit">Search</button>
+    <p id="spantxt"></p>
+    <h1>Search Results</h1>
+    <p id="intro">
+
+    </p>
+    <div id="books">
+
+        <div class="book">
+            <h2><a href="#">Car</a></h2>
+            <h4>(Transportation mode)</h4>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJYAyAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAECAwUGBwj/xABBEAACAQMCAwUGAggEBQUAAAABAgMABBESIQUxQQYTIlFhBxRxgZGhMrEVI0JSYsHR8BaCkuEkM3Ki8TVDRbLC/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwUEBv/EACgRAAIBAwQDAAEEAwAAAAAAAAABAgMREgQTFFEhMUFhBTKBoRUicf/aAAwDAQACEQMRAD8A7URU4iooR0/d10szj4AndU3d0XoqJSjIMAUpUGjospUClUpEuIG0dVNHR5SqmSqUiHEE0UgtE6PSmKU8icSjRVbJRRWoFaaYNApjqJjFElfSm007k2QKY6qaOjStVslVkJxA2jqsx0Wy1ArVXIxBDHvUhGuNxVpFRNO4rFTRJ5VARIGGRVxqBG9O4WItozyqJCeVORvmligsrJCjAFKk3OlTEz0MJS0VfppsVyrnVxBytRKUQVqJWmmLEHKVApRRWoaaq5LiDFKgUoorUSlPIlxBDHUSlFFKgUqlIhxBSlQKUWUqBSnkTiClKiUoopUClVkTiDFKrZaKZagyVVycQJlqsrRhjqtkqlIhxBCtVstFtHVZjqrkWBsVErRBSkY6eQrApSolaLMdQKVVx2AXGKVXyx0qaYWPRqjii9A6qKYovQCuPmdvbBDio4ovuwegpjEPIU8hbbBMVEijO5U9Kj3A8hTzFtsDIqOKN7gA8hTdyh/YAozQtpgOM9KiV9KNa2U8hS92XHIVW4idlmeVqJX0rR93Qfsk/E1D3ZCdwQPjRuIToMzitQK1pm0TzaoGzX+KqVVEuhIzSBUGWtI2Q82+lRNkvVm+lUqqJ2JmWy1WVrV9yT98/SoGx2/F9qrdiQ9PMySo8qrZa1vcD1fH+WoNYdBJv6rTVVE8eZlFaYrWi9hIvkfhUfcX6kD41e5EjZn0Z+kVWwFaJsnBxlT86i9hJ0Kn0Bp7kROjPoyJB6UqOlspv3PvT1anEnbl0dxqps1wVl7UeByw6r6K6tX3OBH3q489S1s2fbTs/eYEHEotR/ZY6T9DXMSOxkkdHmlmswcZsiDpl1YXUSOg8/hUbfjllcRiS3k72M8mTcfXNVhIl1YdmrqptVZx4va+b/Ssjj/bThnBoC8muSXHhiUbn4+VCpS6Fvw7On1UtRryO47X9puMZksF9ztiD4gRGMf9RBJ+VczY9pONcSvFt0upGLuQHM7ABRzJP+1a7CX7nYz5K82+H0CTUS1eKcRl4sllcyR303f2y94wErMrJ1IJ8vgOR28wp4O10MJn95DxadWqO7UjHP41ctKl9IWrbV7f2e8FqbNfOKdpuMqf/UZgR/EaKj7ZdoIfw8TuM/8AVmp46+MvkPo+g9VNmvEbD2g9pC6ILuObUcASRrufjiuhs/aNf28gj4zw1W/iibSfvt+VJ6aXwOTC9memltqjqrm7Xtjw28i7y271v3lxhl+Iqw9qLQZ/Vzfap2J9Deppr6b5ao66549qbTSTokBHIEHJ+1V/4qtidopPpT48+hcqn2dHqPmaWrzrnP8AFEB5QS/If7Uv8UW45xSD4g/0p7E+hcqn2dAcUxYVgf4nhP4beQ/AH+lS/TrkZWwuCPRD/SjYmHKp9m3keVMSDzANYR49IP8A4y7Pwjb+lK849JZIjXXDriIMMjUMf+KezIXKpmxJpPNRSrl5O2EPS0k+tKrWnn0Ty6XZ4uJxKCptANPN1LYzzPTc0w0sGIVAdmbvIyQK+jUsLZBp7iADyCCmNhaZybeDI5HQM15tr8m3I/B4BaXdvHbSi5tpZ3AwkkcxRByzq6n4Z60bwbi/DYrkrJYXhWQgItndyAlifLbJ5da93SCJU0KiKvkFArA7TqsEMvuyxxSiIOXQAMwJI5/L71pSotzSuROusW7GLxHiTWtokVvHMspUZMj6mT0PrXLXSa76G4aEzAKC6Nz1D/felJLKx1KpYnGDkfOo95cZyoIPLlkH+/jX0T0tNxwv57ONGc08vjA+N8Y4hIsqLI0cbrpK6cYB50Dw2J4bO4eMBXeIRrITgDJy29a8t7dRAB4EkycBQdLH4A1YeMyC3W3l95to0JwFB05PnpryS0qUvDu189HppTtG1rLteTM7L3TcN49B3sySW8xEMq68qAxAyfnjPpmhu0TXXDb+XhEkjC3tziIHbKHdc+eOXyqqVYb7iZgtVBjLZmnZivXOxyd8+ldLfcPh4r3LcQzO8K6FliYK+nOcE753PWsaemqVclBeF+T0VatKnbNnH2kyWt5bzTIs8QYMyBh4h/L6VG4uBLcySDwhmJx6ZrqW7L2RH6tZ9ujuD/8AoVS3A7WA4kg3/iLL+dWtBW/Bk9XR9oyOJRiHuJY2T9bGCQrA6TWlZXsVzAqz4B5HXyPrmrV4Xw/O1uPm9We6WCbNbkY2/vatFo6sWeadelOKTTK+6ntH95s5mBT9pDnA8jjmPSun4R2hsr2Ai9Zba5T8SliVYfvKfLzHSufjtOFhgyd7Gw6q4H8qsl4dwl1wxucnfDPjf0IH8jUvT1E/ARqQatM7KKMXUQltpIpY25OjAg1A2L9QB86yeC3fDOF2ZtEFzEurPeKysD9AKOk4hA/iS+kdT5ZyPjUbdRe0TJwv/qy/3Fh1H1p/czjcqfSmt4mvEL2t00qj9184qZsZ/wBvWfi1Q3b2Tch7uUGzY9NW1V95Omy3TgeQc072Mmdg31qv3OVTkA5ougyZJru4XlcTfKQ0PcXcjqTIrS556iTny6USFuV2C5/y1NZLtchUX5rQpIHKT+mHNcRb5sz/AKR/SlWtNLe43RPpSq8yLFnHfaJbcInW1a1NxdFNYAYhQd9jyIO2MEVzEntG7Q3EKzWfDioByT3DujfMH8qsmisjc6LHszxpwz68zGVEU5OWYYGWxg9c+dBXMFuHDjs5ePMjHVD30y6uoOFL8xXC3ZSPplSgvh2PZHt779M9px+3jspFUMs5bEb7b5z+E/Osv2pXyXCWw4ddLJ70THqiORoQZbPnuaEs+E8XueGyT2fZOGFw6iP3m3ZpE3HiBfpz6CodpbbiMPCuBy3tn3HEcXEbQEBdRLAjA5ctqqNWSDaje5xV5YulsHSczCNtLqGzjnuMbY2I+XrQirOqh1S6CkfiAbFbRt0tr60sJIiBMWaTJ3OrxBdttsLyrqZuJcQs41ZuDXEtqygpJgaMfAA7fHFdDT6ico2XsicUvZ537/dxEL7zLsc4fp8jWjbcavSBqiWYeZTST8xXQHifDuIt/wATwzvHUbt7uCcf5d8fKrYLXs/cNiFY4mP7KuUP0zXrVarD2mZyp05/Ecub+Fp5De2WNR28RDCtywura4tGcTiDu2AUOFUnbzAya0ZOAWjJiPvFVsDHe5H0xWTx+yPDoYbS0bThgFYrjMj7luWMBQB9aOYoK5nPTRmrII4f2htIrzRdh5YQfEWA/LnXXm04DxLuo+HTywzynCIT4MkbZz0PpXALwiyFu1s01tBNGneyzyqzyY/ebfC58hk03D5J4IDrIIRtIYHIPUYPw3H+xrXS/qEtVLBvGXwwr6GFJZRV0dJxjgt9w9pu8t3dI20tLD4lzjPTp61zz3gXA1HfOARscc8Uff8AHLm9s2t7iQPrVUZpSxYqpDKoIO24zyyaE/TzQ251WEE4P4hIx7rIGBpQ+EHAG+M861lq9ZSVqkU/+BHT0Jftb/kDa/QNjUAfLNR/SGnYOMeWaG4lx2C7t+5g4PZ2zbfrI9WfoTigx38UMRKqgdNQLRjcaiM5PwxXmn+pNRu4my0UDYgvhLJoNzDDtsZNWD/pU/epTXfcJqF5bu2T4IWZiPXljHz61jLLKTguo3G3dKf5UdLBciEt3iqEXORGBq8jy/8APSvP/kpvykVw6a8Bdtx6W2lE0MrRSD9oHn8a7rst21h4ncLZ3w0yuQqypuuemfKvK1llHKQMemVU/wAq6/gfGrqw4PZx2thDO88zPIxXSfC3hBIAJH5eVQ9VvOzQpaWEUesyQLyOPnVDW6/w1Dsvfvxzg63E8Wm6jdobhdQADruSPTBBrVazwQGwpOMAsOted1LGXHfRk+7L/D9af3UY6VrDhz6iMbg4xmpHhz77ctjT3RcZ9GDLaKRzFKtl+GyHkpI9KVG6hcZ9BjTXqIxiknbC7AqGb49Bmro5LgopNwfw+PUhU/QcudaMRc8znbnoxTnbOcDzOOdc/I6+JnarkEyRPIVZjhXIOkYx6HnXE+1LhD8TsLWea5e3WJnUyhnIQaTjIHmRjrzFeih9wzJ96ovLeDiFu9veW6yxzJpYctv760ZBifOVv7w/u8t1A0Ultl1DAjwfsD867fsvxe44razLwu1LrbsvfG4mRFJPLSTkZ2yfQjzrpL32YcIvVdY7ziNuHIOzqfqSuax5fYxw0R6IeN8TGvoVQjPXI2zVRnZicWVX0thOxTivB49XMSRBJDjzyhJ/Ksa67O8Dumza3k0Mr790zagPk3joPivsd47ZuJOFXFvfRc1KnupAfgdvoa5u7te1nA5Gjuk4hDp3IlQun3BBr1Q1Lj6dv5M5Qv7OpPZXi1qwXh14so56UcxnHwO1S48lwycGk4nAYJYywlDHy68+q5+tczYdtuMWwXvBBOi9QNB/7dvtWlfdqY+1XDhwyazNvdDLxS68rjByOWeWT8qKuolUVmEKcYu6BP0U6TX01rcx3UF7CwSVSWOrIIBA8tOPnUoeHz+5SR3ukSyAnEY/AUII/wDs1VcPmTglzZ2d6qzGQtHMsbHDIW/Dn19N6j2fhminzJMsr3SSyyKv7BB0/U7/AErKi3GaZpUs1ZEPdTaWd5eXM2qOFVVFxzkc4HPyAZvkKNvuJcHvO6fheqM6cSoy6VyORHTfeq78LPaSWlxkRNIJNjpIYAj6b1jvYwL+C4KjyKggfPI/KvY5SnVc5M89ljijRIibfCH5VdtfWnuDae/iJktWO2/7Ufz5j1HrXPSxyKdK3tsM9E15+ummt7iK3cd68s2OWH0jP51FSrGSxaHGm15uGC3Yj/kSDbkYz8un9+XWkYW38DZIzsjfDP8AfzyKh+lQx8EP/dn8v6U36XGNIgjznmQc15MTYujhaRwHzGufE5x4ANvr0A8yK6PhVzDEhdjpghXKIN8ADlt9Sa4h7qZ3IMgK5/5b+IV03Y3gN3xm6/4SOSKMEJK/eqIwGzt4iCc77b1cZKImrnqfszhl/wAKI80jR+8zSzupfAOWJx+W/XFdFHNa3/hdUnjJOTqB0+eceWeh6+mafhfDm4dwyGzCtIqg4Z0Vs5Oc/XOPjRLtpfZWEmPEwB0kZ+fnn+9sbodmTy4VkljWJIlDHSxJz5kbeVIse+RWk8GQV8DOufLb0x86mVbHVSVIQMN/j5/eoxwYJUHGgqwxkHbpjl0HxouKxAToo0tIxbIUlxp3JJwMgdOnpT00lqWU91Gys37hC79Cehp6LgaYkjIDHYj98YNOZIo9/MdDUSTkFn2HIEDAppIYJ9pI1bqCRyNZGxYWV9tWnbNMgQ5A3xtyPlmqWtog2tSYyN9gOfxpasKPEGz8aLjCAFG+T86ROw0jI8/KhQzdAzDyJ/KmdjjKsBy55xRcLBgOBknODtvTFgAQXG42yKECzHOpwPIimiiKsxZy7MdsjGPTApXCxTxDs5wXigzf8MtJ2bYu0KhvqN65LiXsv7PCZbnh/vVpIrAjRONKn1DA7egrt2UuhRiyqRzU7ioIiJgEBsDG+5NPJixR5B2h7K3djrhg7PC/0vrj4lbO2thzUNHk5I5cunrXIXk0vDnkkubW5F1IMaZLd0CL5eIV9G6yCyoAGH986onuyMieIuowMKAdR+tCl2GPR8pXcst1MXEbeuBvVDxSKfGjA/xA19RXXBuC8RQC54PbzMRg/qVBHzFZk/s57KzDB4UIuv6qaRT9jVqoiXB/D5u0N5Globyr36f2W9nXU6DdwYP4o5ic/Jg1Z83sq4TpJi4vc4xnxxI35AVWcOycZdHiao43BI8sVIxknOTmvXm9lKFdUPFUwc41wfyzQ8/sov0GY+I2TeetGXHz3p5Q7E1Po8rjj0tk5Ppyrb4Xxi64fIsllMYGQ5X9WrYPpkbV10nst42u5uOHBNvEJWJ+mmrLb2VcQlIMvF7dU6lIicD601UgvosZMex9q3HIBi5is7oDfxIUP1U8/XFa8XtbgkUG94HLqU/+1chlx5+JRv6fehrP2T2sql5eJ3QwxG0Qzt/flWrb+ynglvgzzXs5/jn0g/6QDUOpTKUKnZrWPbPgHEwpj4lFbyO2lYrlu7wTy57Heuqty0SIkmkkMc7YJG/lXKWHZLgNhMkkPDYA8RDI7LqORy3O9dJ3pxlNJbPM9KxlNfDVRf0JbkNAJHnq3HpSoF3nJ8UuB5KuP5UqMmGJoCYk4zU8kt125HNBKwUl9OxOT608nd61cjxL+HJ6fClcoMLMeRY+Y51WJAJCAi558sZ+1UNJE6kMgZTsfhUTcJqGFORyC0rgFJPK2QyaAOR1c/7/AJU0siMpLByQOY50L340nwuAOWOtMHUgMuRvyK8qVwsFx92oLqzAnoWzUPeJUGcHA8+f2oYDK43FMz6eZGB+0TRcLEnvZTjITGfHoYnA8xtvVyXMb40eIYyBQZ7thrdUPw8VVJKMkBVPkdW/zpXHY0DP3upNI8iD96QKadIVAfIisrv5iTlkznIwCu3zyTV8c+kBQ++OR33+NFwsFrK0eyL6EhcUObq5MjCSJo1HIhc6tuhG3nzqMlzKBzUY/eUVAXLb4w2ojmdh8KLhYKRoVxu2xOdS1WZ0OVXIHmBVGtwBkLkLy5gH0qAn8TMyNg/QfCgYRHdRPnRMARzFWCUyKSkrFeRxQnfxZwN/jimWWIkMY984PM/ekBdcPsFMhGx354/vNRj1qpWNwCdhjah20bnVz8W/L5VWJzE2AoOM8t8en2oA04O8iiCacnOTq3p3crlpCowM5O2B6msgXkiy6ZJTHEV5g8j1paTu0NzINQ1EknHpg5piD7hpVxhoiOurP2IphIoGppVwdz0rOQnSkImYaAACH3OKtRZYhjv2OkbZ5/OgA6SdUC+PY77tzpVmFkgLYY7ks2/PNKgAkSk4fLYBxjO2eeccqKjuGMWcn6ClSouBVJcSfqymd2wd8Y+1OZNw2DgnFKlSAmHCsBpzt1NKW4VCBhhlgoxSpUAIS58/nTM+dsUqVAFTbk5JwRtsPD9qTKDhgNx160qVADAktgMwxjnvzpsgsduX3pUqAK+80OQS5GeWduWavDx6NeGyAKVKgY0jr4lCk/GqvD4RjalSoAkqDSd2wvQnNMArJnGxGN/KnpUCKolSALDFqCDwgZ5VPuQH0nc880qVOwIFZRGxyWYE5C9Bz+tR1YJXGfieVKlQAtY5eL61W5wCct9aVKkBGQnQMM3xY5pUqVMD/9k="
+                alt="">
+            <p>
+                A car is a wheeled motor vehicle used for transportation. Most definitions of car say they run primarily
+                on roads, seat one to eight people, have four tires, and mainly transport people rather than goods. Cars
+                came into global use during the 20th century, and developed economies depend on them.
+            </p>
+        </div>
+
+
+        <div class="book">
+            <h2><a href="javascript:AlertIt();" id="btn"> Click here</a></h2>
+            <h4>to request for more content</h4>
+
+            <img src="" alt="">
+            <p id="">
+                *******************************************</p>
+            <h2><a href="games.html">Click here to go to the gaming page of our website</a></h2>
+            <script>
+                function AlertIt() {
+                    var answer = confirm("Your request has been sent succefully");
+                    if (answer)
+                        window.location = "choose.html";
+                }</script>
+        </div>
+    </div>
+
+    <a href="assets/js/bin.txt" style="color: rgba(255, 255, 255, 0.116);">
+        Find me and then click on me;
+    </a>
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <footer class="social">
+        <a href="#medium" class="firstlink">
+            <img class="footerImage medium" src="assets/images/medium.svg">
+        </a>
+        <a href="#google+">
+            <img class="footerImage gplus" src="assets/images/google.svg">
+        </a>
+        <a href="#facebook">
+            <img class="footerImage fb" src="assets/images/facebook.svg">
+        </a>
+        <a href="#instagram">
+            <img class="footerImage insta" src="assets/images/instagram.svg">
+        </a>
+    </footer>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>

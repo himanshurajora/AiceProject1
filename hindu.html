@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Books</title>
+    <link rel="icon" href="https://png.icons8.com/color/48/000000/book.png" type="image/png" sizes="16x16 32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Pacifico|Yanone+Kaffeesatz|IBM+Plex+Serif"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/tinder.js"></script>
+    <script src="../assets/js/bootstrap.js"></script> <!--    Custom Stylesheets-->
+    <script src="search.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/custom_style.css">
+    <link rel="stylesheet" href="assets/css/books.css">
+</head>
+
+<body style="padding: 25px">
+    <input class="form-control mr-sm-2" id="searchtext" style="width: 500px; height:auto; " type="text"
+        placeholder="Search">
+    <button class="btn btn-outline-success" onclick="searchfunction()" type="submit">Search</button>
+    <p id="spantxt"></p>
+    <h1>Search Results</h1>
+    <p id="intro">
+
+    </p>
+    <div id="books">
+
+        <div class="book">
+            <h2><a href="#">Hinduism</a></h2>
+            <h4>(religion)</h4>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/1_Om.svg" alt="">
+            <p>
+                Hinduism is an Indian religion and dharma, or way of life, widely practised in the Indian subcontinent
+                and parts of Southeast Asia. And this is my religion and the true religion.
+
+            </p>
+        </div>
+
+
+        <div class="book">
+            <h2><a href="javascript:AlertIt();" id="btn"> Click here</a></h2>
+            <h4>to request for more content</h4>
+
+            <img src="" alt="">
+            <p id="">
+                *******************************************</p>
+            <h2><a href="games.html">Click here to go to the gaming page of our website</a></h2>
+            <script>
+                function AlertIt() {
+                    var answer = confirm("Your request has been sent succefully");
+                    if (answer)
+                        window.location = "choose.html";
+                }</script>
+        </div>
+    </div>
+
+    <a href="assets/js/bin.txt" style="color: rgba(255, 255, 255, 0.116);">
+        Find me and then click on me;
+    </a>
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <footer class="social">
+        <a href="#medium" class="firstlink">
+            <img class="footerImage medium" src="assets/images/medium.svg">
+        </a>
+        <a href="#google+">
+            <img class="footerImage gplus" src="assets/images/google.svg">
+        </a>
+        <a href="#facebook">
+            <img class="footerImage fb" src="assets/images/facebook.svg">
+        </a>
+        <a href="#instagram">
+            <img class="footerImage insta" src="assets/images/instagram.svg">
+        </a>
+    </footer>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</body>
+
+</html>
